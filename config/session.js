@@ -44,7 +44,7 @@ module.exports.session = {
   *                                                                          *
   ***************************************************************************/
 
-  // adapter: 'redis',
+  adapter: 'redis',
 
   /***************************************************************************
   *                                                                          *
@@ -54,13 +54,14 @@ module.exports.session = {
   * https://github.com/visionmedia/connect-redis                             *
   *                                                                          *
   ***************************************************************************/
-
-  // host: 'localhost',
-  // port: 6379,
+  // redis://h:p99388f377fc98544fb4a8481db364accc2d3eced96f98ee96c36d4d18449a82d@ec2-52-202-15-207.compute-1.amazonaws.com:15909
+  host: 'ec2-52-202-15-207.compute-1.amazonaws.com',
+  port: 15909,
   // ttl: <redis session TTL in seconds>,
   // db: 0,
-  // pass: <redis auth password>,
+  pass: 'p99388f377fc98544fb4a8481db364accc2d3eced96f98ee96c36d4d18449a82d',
   // prefix: 'sess:',
+  user: 'h'
 
 
   /***************************************************************************

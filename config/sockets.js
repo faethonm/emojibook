@@ -43,8 +43,15 @@ module.exports.sockets = {
   //
   // -OR-
   //
-
-  // adapter: 'socket.io-redis',
+ // redis://h:p99388f377fc98544fb4a8481db364accc2d3eced96f98ee96c36d4d18449a82d@ec2-52-202-15-207.compute-1.amazonaws.com:15909
+  host: 'ec2-52-202-15-207.compute-1.amazonaws.com',
+  port: 15909,
+  // ttl: <redis session TTL in seconds>,
+  // db: 0,
+  pass: 'p99388f377fc98544fb4a8481db364accc2d3eced96f98ee96c36d4d18449a82d',
+  // prefix: 'sess:',
+  user: 'h',
+  adapter: 'socket.io-redis',
   // host: '127.0.0.1',
   // port: 6379,
   // db: 0,
